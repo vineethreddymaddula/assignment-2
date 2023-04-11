@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>contact</title>
+
+    <style>
+      * {
+        margin: 0px;
+      }
+      body {
+        background-color: rgb(228, 220, 220);
+      }
+      h1 {
+        display: flex;
+        justify-content: center;
+        margin: 20px;
+        font-weight: bolder;
+      }
+      
+      form {
+        display: flex;
+        justify-content: center;
+        padding: 20px;
+      }
+      fieldset {
+        color: rgb(17, 17, 17);
+        font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+        display: flex;
+        margin: 25px;
+       
+
+        flex-direction: column;
+
+        width: 350px;
+        padding: 15px;
+      }
+
+      legend {
+        font: 18px sans-serif;
+        border: 1px solid black;
+      }
+      button{
+        margin: 5px;
+        border-radius: 5px;
+        width: fit-content;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Contact Form</h1>
+    <hr>
+    <form action="file.php" method="get" target="_blank">
+      <fieldset>
+        <legend>Enter your details</legend>
+        <label for="name">Name: </label>
+        <input type="text" name="Name" placeholder="Name" id="name" required />
+        <label for="email">Email: </label>
+        <input
+          type="email"
+          name="email"
+          placeholder="example@mail.com"
+          id="email"
+        />
+        <label for="subject">subject: </label>
+        <input type="text" name="subject" placeholder="subject" id="subject" />
+        <label for="message">Message: </label>
+
+        <textarea
+          id="message"
+          name="message"
+          placeholder="Write something.."
+          style="height: 200px"
+        ></textarea>
+        <button type="submit">Submit</button>
+      </fieldset>
+    </form>
+  </body>
+</html>
