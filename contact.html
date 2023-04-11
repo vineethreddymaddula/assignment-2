@@ -12,14 +12,15 @@
       }
       body {
         background-color: rgb(228, 220, 220);
-      }
+        
+    }
       h1 {
         display: flex;
         justify-content: center;
         margin: 20px;
         font-weight: bolder;
       }
-      
+
       form {
         display: flex;
         justify-content: center;
@@ -29,7 +30,15 @@
         color: rgb(17, 17, 17);
         font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
         display: flex;
+        font-size: 18px;
+
         margin: 25px;
+        background-color: antiquewhite;
+        border: 2px solid black;
+        border-radius: 10px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+      
+
        
 
         flex-direction: column;
@@ -41,7 +50,10 @@
       legend {
         font: 18px sans-serif;
         border: 1px solid black;
-      }
+        background-color: beige;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        padding: 5px;
+    }
       button{
         margin: 5px;
         border-radius: 5px;
@@ -64,7 +76,7 @@
           placeholder="example@mail.com"
           id="email"
         />
-        <label for="subject">subject: </label>
+        <label for="subject">Subject: </label>
         <input type="text" name="subject" placeholder="subject" id="subject" />
         <label for="message">Message: </label>
 
